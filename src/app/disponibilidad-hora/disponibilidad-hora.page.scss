@@ -1,0 +1,11 @@
+.centrado{
+    margin: 0 auto; /* Centra horizontalmente */
+    text-align: center; /* Centra el texto dentro del textarea */
+}
+
+.centradoBoton{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}

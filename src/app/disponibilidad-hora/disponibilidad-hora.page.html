@@ -1,0 +1,62 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>O'Clock</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="centrado">
+    <ion-text class="centradoCalendario">
+      <h1>Disponibilidad de horas</h1>
+    </ion-text>
+  </div>
+
+  <div >
+    <ion-list >
+      <ion-item class="centrado">
+        <ion-label>10:00 - 11:00</ion-label>
+      </ion-item>
+      <ion-item class="centrado">
+        <ion-label>11:00 - 12:00</ion-label>
+      </ion-item>
+      <ion-item class="centrado">
+        <ion-label>12:00 - 13:00</ion-label>
+      </ion-item>
+      <ion-item class="centrado">
+        <ion-label>13:00 - 14:00</ion-label>
+      </ion-item>
+      <ion-item class="centrado">
+        <ion-label>14:00 - 15:00</ion-label>
+      </ion-item>
+      <ion-item class="centrado">
+        <ion-label>15:00 - 16:00</ion-label>
+      </ion-item>
+      <ion-item class="centrado">
+        <ion-label>16:00 - 17:00</ion-label>
+      </ion-item>
+      <ion-item class="centrado">
+        <ion-label>17:00 - 18:00</ion-label>
+      </ion-item>
+      <ion-item class="centrado">
+        <ion-label>18:00 - 19:00</ion-label>
+      </ion-item>
+      <ion-item class="centrado">
+        <ion-label>19:00 - 20:00</ion-label>
+      </ion-item>
+      <ion-item class="centrado">
+        <ion-label>20:00 - 21:00</ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div class="centradoBoton">
+    <ion-button [routerLink]="'/disponibilidad-dia'" fill="outline" color="light">
+      <ion-icon slot="start" name="arrow-back-circle-outline"></ion-icon>Volver
+    </ion-button>
+    <ion-button [routerLink]="'/disponibilidad-hora'" fill="outline" color="light">
+      <ion-icon slot="end" name="arrow-forward-circle-outline"></ion-icon>Agendar hora
+    </ion-button>
+  </div> 
+
+</ion-content>
