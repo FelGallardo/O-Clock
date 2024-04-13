@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>O'Clock</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content >
+
+  <div class="centrado">
+    <ion-text class="centradoCalendario">
+      <h1>Disponibilidad de horas disponibles por día</h1>
+      <img src="../assets/img/ICONO_ISOTIPO_72DPI (1).png">
+    </ion-text>
+  </div>
+
+  <div class="centrado">
+    <ion-datetime presentation="date" class="centradoCalendario" class="color1">
+    </ion-datetime>
+  </div>
+
+  <div class="centrado">
+    <ion-button [routerLink]="'/disponibilidad-hora'" fill="outline" color="light">
+      <ion-icon slot="end" name="arrow-forward-circle-outline"></ion-icon>Siguiente
+    </ion-button>
+  </div> 
+
+</ion-content>
