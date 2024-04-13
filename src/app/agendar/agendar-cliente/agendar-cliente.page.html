@@ -1,0 +1,55 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <img class="logo2" slot="start" src="../assets/img/ICONO_ISOTIPO_72DPI (1).png">
+    <ion-title>O'Clock</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div class="centrado">
+    <ion-text class="centradoCalendario">
+      <img class="logo3" src="../assets/img/ICONO_ISOTIPO_72DPI (1).png">
+      <h1>Elegir cliente: </h1>
+    </ion-text>
+  </div>
+
+  <div>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Datos del cliente</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item fill="outline">
+          <ion-label position="floating">Ingrese nombre completo</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+
+        <ion-item fill="outline">
+          <ion-label position="floating">Número de telefono</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+
+        <ion-item fill="outline">
+          <ion-label position="floating">Correo electrónico</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+
+
+  <div class="centradoBoton">
+    <ion-button [routerLink]="'/agendar-hora'" fill="outline" color="light">
+      <ion-icon slot="start" name="arrow-back-circle-outline"></ion-icon>Volver
+    </ion-button>
+    <ion-button [routerLink]="'/agendar-dia'" fill="outline" color="light">
+      <ion-icon slot="end" name="arrow-forward-circle-outline"></ion-icon>Agendar hora
+    </ion-button>
+  </div>
+
+</ion-content>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-disponibilidad-hora',
   templateUrl: './disponibilidad-hora.page.html',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DisponibilidadHoraPage implements OnInit {
 
+
   constructor() { }
 
   ngOnInit() {
   }
+
+
+
 
 }

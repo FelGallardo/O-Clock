@@ -1,11 +1,38 @@
 .centrado{
-    margin: 0 auto; /* Centra horizontalmente */
-    text-align: center; /* Centra el texto dentro del textarea */
-}
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    }
 
 .centradoBoton{
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centradoCalendario{
+    text-align: center;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo2{
+    width: 25px;
+    height: 25px;
+}
+
+.logo1{
+    width: 25px;
+    height: 25px;
+}
+
+.logo3{
+    width: 150px;
+    height: 150px;
 }

@@ -1,5 +1,9 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <img class="logo2" slot="start" src="../assets/img/ICONO_ISOTIPO_72DPI (1).png">
     <ion-title>O'Clock</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -8,8 +12,10 @@
 
   <div class="centrado">
     <ion-text class="centradoCalendario">
-      <h1>Disponibilidad de horas</h1>
+      <img class="logo3" src="../assets/img/ICONO_ISOTIPO_72DPI (1).png">
+      <h1>Disponibilidad de horas día: </h1>
     </ion-text>
+
   </div>
 
   <div >
@@ -54,9 +60,7 @@
     <ion-button [routerLink]="'/disponibilidad-dia'" fill="outline" color="light">
       <ion-icon slot="start" name="arrow-back-circle-outline"></ion-icon>Volver
     </ion-button>
-    <ion-button [routerLink]="'/disponibilidad-hora'" fill="outline" color="light">
-      <ion-icon slot="end" name="arrow-forward-circle-outline"></ion-icon>Agendar hora
-    </ion-button>
+
   </div> 
 
 </ion-content>

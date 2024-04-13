@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DisponibilidadDiaPage implements OnInit {
 
+
+
   constructor() { }
 
   ngOnInit() {
+
   }
 
+
+
+  
 }

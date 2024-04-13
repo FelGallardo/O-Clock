@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'folder/Inbox',
+    redirectTo: 'disponibilidad-dia',
     pathMatch: 'full'
   },
   {
@@ -18,6 +18,18 @@ const routes: Routes = [
   {
     path: 'disponibilidad-hora',
     loadChildren: () => import('./disponibilidad-hora/disponibilidad-hora.module').then( m => m.DisponibilidadHoraPageModule)
+  },
+  {
+    path: 'agendar-cliente',
+    loadChildren: () => import('./agendar/agendar-cliente/agendar-cliente.module').then( m => m.AgendarClientePageModule)
+  },
+  {
+    path: 'agendar-dia',
+    loadChildren: () => import('./agendar/agendar-dia/agendar-dia.module').then( m => m.AgendarDiaPageModule)
+  },
+  {
+    path: 'agendar-hora',
+    loadChildren: () => import('./agendar/agendar-hora/agendar-hora.module').then( m => m.AgendarHoraPageModule)
   }
 ];
 
