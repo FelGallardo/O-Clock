@@ -1,36 +1,25 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { NoAuthGuard } from './guards/no-auth.guard';
+import { AuthGuard } from './guards/auth.guard';
+
 
 const routes: Routes = [
+
   {
     path: '',
-    redirectTo: 'disponibilidad-dia',
+    redirectTo: 'auth',
     pathMatch: 'full'
   },
   {
-    path: 'folder/:id',
-    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+    path: 'auth',
+    loadChildren: () => import('./pages/auth/auth.module').then( m => m.AuthPageModule), canActivate:[NoAuthGuard]
   },
   {
-    path: 'disponibilidad-dia',
-    loadChildren: () => import('./disponibilidad-dia/disponibilidad-dia.module').then( m => m.DisponibilidadDiaPageModule)
-  },
-  {
-    path: 'disponibilidad-hora',
-    loadChildren: () => import('./disponibilidad-hora/disponibilidad-hora.module').then( m => m.DisponibilidadHoraPageModule)
-  },
-  {
-    path: 'agendar-cliente',
-    loadChildren: () => import('./agendar/agendar-cliente/agendar-cliente.module').then( m => m.AgendarClientePageModule)
-  },
-  {
-    path: 'agendar-dia',
-    loadChildren: () => import('./agendar/agendar-dia/agendar-dia.module').then( m => m.AgendarDiaPageModule)
-  },
-  {
-    path: 'agendar-hora',
-    loadChildren: () => import('./agendar/agendar-hora/agendar-hora.module').then( m => m.AgendarHoraPageModule)
+    path: 'main',
+    loadChildren: () => import('./pages/main/main.module').then( m => m.MainPageModule), canActivate:[AuthGuard]
   }
+
 ];
 
 @NgModule({
@@ -39,4 +28,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
