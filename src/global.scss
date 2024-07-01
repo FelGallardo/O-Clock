@@ -25,7 +25,40 @@
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
 
-.logo1{
-    width: 170px;
-    height: 170px;
+/**
+ * Ionic Dark Mode
+ * -----------------------------------------------------
+ * For more info, please see:
+ * https://ionicframework.com/docs/theming/dark-mode
+ */
+
+/* @import "@ionic/angular/css/palettes/dark.always.css"; */
+/* @import "@ionic/angular/css/palettes/dark.class.css"; */
+@import "@ionic/angular/css/palettes/dark.system.css";
+
+
+.page-content {
+    position: relative;
+    z-index: 0;
 }
+
+.page-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/img/ICONO_ISOTIPO_72DPI (1).png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.2; /* Ajusta este valor para cambiar la opacidad de la imagen */
+    z-index: -1; /* Coloca el fondo detrás del contenido */
+}
+
+.custom-checkbox {
+    background: rgb(255, 254, 198); /* Color de fondo del checkbox */
+    --checkmark-color: rgb(255, 254, 198); /* Color de la marca de verificación */
+}
+
